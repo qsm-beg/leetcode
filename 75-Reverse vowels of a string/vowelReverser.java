@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class vowelReverser {
-
     // public static String vowel = "";
     // public static String word = "";
 
@@ -39,5 +38,4 @@ public class vowelReverser {
         }
         System.out.println("String with reversed vowels:\n" + word);
     }
-
 }
