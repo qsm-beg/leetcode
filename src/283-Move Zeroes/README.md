@@ -27,3 +27,5 @@ Output: [0]
     -231 <= nums[i] <= 231 - 1
 
 ![alt text](image.png)
+
+![alt text](image.png)
