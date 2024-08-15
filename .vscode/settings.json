@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "src/605-Can Place Flowers",
+        "src/345-Reverse vowels of a string",
+        "src/283-Move Zeroes"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": ["lib//*.jar"]
+}

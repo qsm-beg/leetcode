@@ -1,40 +1,22 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+class moveZeroes {
     public void moveZeroes(int[] nums) {
-        int leftPointer = 0;
-        int rightPointer = 1;
+        List<Integer> niceNumbers = new ArrayList<>();
 
-        while (leftPointer < nums.length && nums.length != 1) {
+        for (var number : nums) {
+            if (number != 0) {
+                niceNumbers.add(number);
+            }
+        }
 
-            var left = nums[leftPointer];
-            var right = nums[rightPointer];
-
-            if (left != 0) {
-                leftPointer++;
-                rightPointer = leftPointer;
+        for (int i = 0; i < nums.length; i++) {
+            if (i < niceNumbers.size()) {
+                nums[i] = niceNumbers.get(i);
                 continue;
             }
-
-            if(right !=0){
-                nums[leftPointer] = nums[rightPointer];
-                nums[rightPointer] = 0;
-                leftPointer++;
-                rightPointer =leftPointer;
-                continue;
-            }else if(rightPointer +1 < nums.length){
-                rightPointer++;
-                continue;
-            }
-
-            if(
-                    ( (rightPointer +1   == nums.length) )
-            )
-                break;
-
-
-
-}
-}
+            nums[i] = 0;
+        }
+    }
 }
